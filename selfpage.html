@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>wyka的个人小站</title>
+    <link href="./img/top_logo.png" rel="icon" sizes="32x32"/>
+    <link href="./img/head.jpg" rel="icon" sizes="192x192"/>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1"/>
+    <style>
+        html, body, main{
+            height: 100%;
+        }
+
+        body{
+            margin: 0;
+            font: lighter 16px "微软雅黑";
+            background-image:url("./img/background.jfif");
+        } 
+
+        a{
+            text-decoration: none;
+        }
+
+        main{
+            display: table;
+            margin: 0 auto;
+        }
+
+
+        .logo{
+            margin-bottom: 50px;
+            margin-top:50px;
+            margin-left:200px;
+            margin-right:200px;
+        }
+        .logo img{
+            height: auto;
+            max-width: 100px;
+            border-radius: 8px;
+            border: 3px solid #fff;
+            transition: transform 0.3s;
+
+        }
+        .logo img:hover{
+            transform: scale(1.1, 1.1) rotate(1turn);
+        }
+
+        .links{
+            max-width: 300px;
+            margin-right:150px;
+            margin-left:150px;
+        }
+        .links a{
+            color: #F0FFFF;
+            display: block;
+            min-width: 80px;
+            padding: 1em 2em;
+            text-align: center;
+            margin-bottom: 1em;
+            border-radius: 100px;
+            border: #000 1px solid;
+            transition: background 0.3s, color 0.3s, opacity 0.3s, transform 0.3s;
+        }
+        .links a:hover{
+            color: #258ec5;
+            background: #fff;
+            transform: scale(1.1, 1.1);
+        }
+        .links a:active{
+            opacity: 0.7;
+            transform: scale(0.9, 0.9);
+        }
+        .links a:last-child{
+            margin-bottom: 0;
+        }
+
+        footer{
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: #fff;
+            position: relative;
+            text-align: center;
+        }
+        footer a{
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+<main class="container">
+    <div class="content">
+        <div class="logo">
+            <img src="./img/head.jpg" title="wyka的个人小站"/>
+        </div>
+        <div class="links">
+            <a href="https://www.cnblogs.com/wyka/">博客</a>
+            <a href="https://weibo.com/u/7455380338/home?wvr=5&lf=reg" target="_blank">微博</a>
+            <a href="https://music.163.com/#/user/home?id=366601768" target="_blank">网易云</a>
+            <a href="https://github.com/wykahhh" target="_blank">GitHub</a>
+            <a href="https://space.bilibili.com/100231751" target="_blank">哔哩哔哩</a>
+        </div>
+    </div>
+</main>
+<footer>
+    <div>© 2021 By <a href="https://www.wyka.top" target="_blank">Wyka</a>.</div>
+</footer>
+</body>
+</html>

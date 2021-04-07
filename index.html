@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="wyka丨个人导航">
+    <meta name="keywords" content="导航">
+    <meta name="generator" content="wyka | 个人导航">
+    <link rel="stylesheet" href="css/semantic.min.css">
+    <link rel="stylesheet" href="css/m_dh.style.css">
+    <title>wyka丨个人导航</title>
+</head>
+<body id="hello" >
+<!--使用了Semantic-UI进行美化-->
+
+<div class="ui inverted menu borderless">
+    <div class="ui container">
+        <span class="header item">
+            <img class="logo" src="img/top_logo.png">
+            个人导航
+        </span>
+        <a href="./selfpage.html" class="item" target="_blank">我的个人主页站</a>
+        </div>
+</div>
+
+<div class="ui main container">
+    <img class="centerlog" src="img/logo.png">
+    <div class="ui search">
+        <div class="ui input">
+            <input id="search" name="wd" class="prompt" placeholder="" type="text" autofocus="autofocus">
+        </div>
+    </div>
+    <div class="ui sbuttons">
+        <button class="ui button" id="google" >
+            谷歌
+        </button>
+       <button class="ui button" id="bing">
+            必应
+        </button>
+        <button class="ui button" id="baidu" >
+            百度
+        </button>
+        <button class="ui button" id="github">
+            GitHub
+        </button>
+        <button class="ui button" id="zhihu">
+            知乎
+        </button>
+        <button class="ui button" id="jd" >
+            京东
+        </button>
+        <button class="ui button" id="taobao" >
+            淘宝
+        </button>
+        <button class="ui button" id="bilibili">
+            bilibili
+        </button>
+    </div>
+    <div class="FooterPush"></div>
+</div>
+
+
+<div class="ui footer segment  inverted vertical">
+    <div class="footer-inner" >
+    <div class="copyright">
+        ©
+        <span itemprop="copyrightYear">2021</span>
+        <div class="ui inverted small horizontal link list">
+        <a href="https://www.wyka.top/" class="item">wyka</a>
+        </div>
+        <div class="contact"><p>E-mail:wyka0821@qq.com</p></div>
+    </div>
+    </div>
+</div>
+
+</body>
+<script src="js/semantic.min.js"></script>
+<!--搜索引擎-->
+<script src="js/search.js"></script>
+<script type="text/javascript">var OriginTitile = document.title;
+var titleTime;
+document.addEventListener('visibilitychange',
+    function() {
+        if (document.hidden) {
+            document.title = '欢迎来到我的小站~' ;
+            clearTimeout(titleTime);
+        } else {
+            document.title = '你来了哈~ ' ;
+            titleTime = setTimeout(function() {
+                    document.title = OriginTitile;
+                },
+                2000);
+        }
+    });
+</script>
+    <!--劝退IE-->
+    <script src="js/checkIE.js"></script>
+<!-- 引入superplaceholder.js，实现input打字机效果 -->
+<script src="js/superplaceholder.js"></script>
+<script src="js/checkOs.js"></script>
+
+</html>
