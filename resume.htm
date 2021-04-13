@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- 个人简历 -->
+<html>
+    <head>
+		
+        <script language="JavaScript">
+			var time=0;
+            while(time<3) {
+                var password = "";
+                password = prompt('请输入密码 (本网站需输入密码才可进入):', '');
+                if(password != '010821') {
+					++time;
+                    alert("密码不正确,无法进入本站!!您还有"+(3-time)+"次机会");
+					if(time==3){
+						alert("密码输入错误上限已到，拒绝访问！");
+						window.location.href='./selfpage.html';
+					}
+				}
+                else {
+                    break;
+                }
+            }
+        </script>
+        <title>简历</title>
+    </head>
+    <body>
+    <table border="1" align="center" cellpadding="10" width="800">
+		<tr>
+			<th colspan="7" bgcolor="BurlyWood" >我的个人简介</th>
+		</tr>
+ 
+		<tr>
+			<th bgcolor="BurlyWood">姓名:</th>
+			<td> 王昱凯</td>
+			<th bgcolor="BurlyWood">年龄:</th>
+			<td>19</td>
+			<th bgcolor="BurlyWood">民族:</th>
+			<td>汉</td>
+			<td rowspan="3" width="100"><p><a href="https://www.so.com/s?ie=utf-8&shb=1&src=home_tab_image&q=%E4%BB%A3%E5%BA%94%E8%B1%AA"><img border="0" src="http://a2.qpic.cn/psb?/V140HpS919MdYh/pzg3zzU**Gw41Fi7T8R9uNFUua5brWbnD3N9Bf8UPKI!/b/dAkBAAAAAAAA&bo=eAB4AAAAAAAFByQ!&rf=viewer_4" />
+		</a></p></td>
+		</tr>
+ 
+		<tr>
+			<th bgcolor="BurlyWood">出生日期:</th>
+			<td>2001-08-21</td>
+			<th bgcolor="BurlyWood">政治面貌:</th>
+			<td>团员</td>
+			<th bgcolor="BurlyWood">学历:</th>
+			<td>本科</td>
+		</tr>
+ 
+		<tr>
+			<th bgcolor="BurlyWood">专业:</th>
+			<td>计算机与金融工程交叉试验班</td>
+			<th bgcolor="BurlyWood">毕业学校:</th>
+			<td>南京大学</td>
+			<th bgcolor="BurlyWood">邮编:</th>
+			<td>210023</td>
+		</tr>
+ 
+		<tr>
+			 <th bgcolor="BurlyWood">爱好:</th>
+			 <td>玩，拆，装</td>
+			 <th bgcolor="BurlyWood">籍贯:</th>
+			 <td>皖</td>
+			 <th bgcolor="BurlyWood">邮箱:</th>
+			 <td colspan="2"><p>911524028@qq.com</p></td>
+		</tr>
+ 
+		<tr>
+			 <th height="160" bgcolor="BurlyWood">个人特长:</th>
+			 <td colspan="6">
+		   <p>我爱计算机，我爱计算机我爱计算机，我爱计算机我爱计算机，我爱计算机</p>
+		   <p>我爱计算机，我爱计算机我爱计算机，我爱计算机我爱计算机，我爱计算机</p>
+		   <p>我爱计算机，我爱计算机我爱计算机，我爱计算机我爱计算机，我爱计算机</p>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
