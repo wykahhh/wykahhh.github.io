@@ -35,7 +35,19 @@ p：搜索网址前段
 n: 搜到网址后段
 h: 搜索首页
 */
-let doAction=function(p,n,s){
+function getURL(url) {
+    var xmlhttp = new ActiveXObject( "Microsoft.XMLHTTP");
+    xmlhttp.open("GET", url, false);
+    xmlhttp.send();
+    if(xmlhttp.readyState==4) {
+        if(xmlhttp.Status != 200) alert("不存在");
+        return xmlhttp.Status==200;
+    }
+    return false;
+}
+
+function doAction(p,n,s){
+    getURL(s);
     if(isEmpty(sInfor.value)){
         window.open(s);
     }else{

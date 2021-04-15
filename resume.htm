@@ -2,18 +2,17 @@
 <!-- 个人简历 -->
 <html>
     <head>
-		
-        <script language="JavaScript">
+		<script>
 			var time=0;
             while(time<3) {
                 var password = "";
                 password = prompt('请输入密码 (本网站需输入密码才可进入):', '');
                 if(password != '010821') {
 					++time;
-                    alert("密码不正确,无法进入本站!!您还有"+(3-time)+"次机会");
+                    alert("密码不正确,无法查看本页面!!您还有"+(3-time)+"次机会");
 					if(time==3){
 						alert("密码输入错误上限已到，拒绝访问！");
-						window.location.href='./selfpage.html';
+						window.history.back();
 					}
 				}
                 else {
@@ -21,9 +20,12 @@
                 }
             }
         </script>
+		<script src="../js/jQuery/jquery-1.11.1.js"></script>
+		
         <title>简历</title>
     </head>
     <body>
+	
     <table border="1" align="center" cellpadding="10" width="800">
 		<tr>
 			<th colspan="7" bgcolor="BurlyWood" >我的个人简介</th>

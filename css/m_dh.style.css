@@ -22,7 +22,7 @@ body {
     position:relative;
     height:auto;
     width:100%;
-    min-height:90%
+    min-height:90%;
 }
 
 .main.container .FooterPush{
@@ -68,8 +68,6 @@ body {
 .short-cut{
     position:relative;
     height:auto;
-    background-image: url('./img/nandabeijing.png');
-    background-repeat:repeat-x; 
     background-size:100% 100%
 }
 .links{
@@ -103,4 +101,11 @@ body {
 .links a:last-child{
     margin-bottom: 0;
 }
-
+.self_page{
+    display:inline-block;
+    background-color:#000;
+}
+.head_font{
+    display:auto ;
+    color:#fff
+}
